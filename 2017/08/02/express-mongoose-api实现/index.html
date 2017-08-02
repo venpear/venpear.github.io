@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="node,express," />
 
 
 
@@ -87,34 +87,58 @@
 
 
 
-<meta name="description" content="hexo 文件怎样使用分类
-在标题头部添加 categories123456---title: 标题名tags: 标签分类categories: 分类名date: 时间---
+<meta name="description" content="express + mongodb + mongoose blog后台api
+环境
+
+express + mongoose
+
+项目地址： https://github.com/venpear/blog-express
+
+启动
+1npm start
 
 
-添加分类列表页面
-source 文件加下创建文件夹（categories）
-添加文件index.md 12345---title: categoriesdate: 时间type: &amp;quot;categories&amp;quo">
+项目搭建
+express 项目生成器 项目初始化构建
+
+1234$ npm install -g express-generator$ expres">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo 使用笔记">
-<meta property="og:url" content="http://yoursite.com/2017/06/29/heox-使用笔记/index.html">
+<meta property="og:title" content="express+mongoose api实现">
+<meta property="og:url" content="http://yoursite.com/2017/08/02/express-mongoose-api实现/index.html">
 <meta property="og:site_name" content="venpear">
-<meta property="og:description" content="hexo 文件怎样使用分类
-在标题头部添加 categories123456---title: 标题名tags: 标签分类categories: 分类名date: 时间---
+<meta property="og:description" content="express + mongodb + mongoose blog后台api
+环境
+
+express + mongoose
+
+项目地址： https://github.com/venpear/blog-express
+
+启动
+1npm start
 
 
-添加分类列表页面
-source 文件加下创建文件夹（categories）
-添加文件index.md 12345---title: categoriesdate: 时间type: &amp;quot;categories&amp;quo">
-<meta property="og:updated_time" content="2017-07-24T04:02:39.000Z">
+项目搭建
+express 项目生成器 项目初始化构建
+
+1234$ npm install -g express-generator$ expres">
+<meta property="og:updated_time" content="2017-08-02T09:22:37.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo 使用笔记">
-<meta name="twitter:description" content="hexo 文件怎样使用分类
-在标题头部添加 categories123456---title: 标题名tags: 标签分类categories: 分类名date: 时间---
+<meta name="twitter:title" content="express+mongoose api实现">
+<meta name="twitter:description" content="express + mongodb + mongoose blog后台api
+环境
+
+express + mongoose
+
+项目地址： https://github.com/venpear/blog-express
+
+启动
+1npm start
 
 
-添加分类列表页面
-source 文件加下创建文件夹（categories）
-添加文件index.md 12345---title: categoriesdate: 时间type: &amp;quot;categories&amp;quo">
+项目搭建
+express 项目生成器 项目初始化构建
+
+1234$ npm install -g express-generator$ expres">
 
 
 
@@ -142,13 +166,13 @@ source 文件加下创建文件夹（categories）
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/06/29/heox-使用笔记/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/02/express-mongoose-api实现/"/>
 
 
 
 
 
-  <title> hexo 使用笔记 | venpear </title>
+  <title> express+mongoose api实现 | venpear </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -277,7 +301,7 @@ source 文件加下创建文件夹（categories）
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/29/heox-使用笔记/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/02/express-mongoose-api实现/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="venpear">
@@ -298,7 +322,7 @@ source 文件加下创建文件夹（categories）
             
             
               
-                hexo 使用笔记
+                express+mongoose api实现
               
             
           </h1>
@@ -313,8 +337,8 @@ source 文件加下创建文件夹（categories）
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-29T10:03:13+08:00">
-                2017-06-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-02T17:20:43+08:00">
+                2017-08-02
               </time>
             
 
@@ -336,8 +360,8 @@ source 文件加下创建文件夹（categories）
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/工具/" itemprop="url" rel="index">
-                    <span itemprop="name">工具</span>
+                  <a href="/categories/项目/" itemprop="url" rel="index">
+                    <span itemprop="name">项目</span>
                   </a>
                 </span>
 
@@ -371,29 +395,85 @@ source 文件加下创建文件夹（categories）
       
 
       
-        <h2 id="hexo-文件"><a href="#hexo-文件" class="headerlink" title="hexo 文件"></a>hexo 文件</h2><h1 id="怎样使用分类"><a href="#怎样使用分类" class="headerlink" title="怎样使用分类"></a>怎样使用分类</h1><ul>
-<li>在标题头部添加 categories<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 标题名</div><div class="line">tags: 标签分类</div><div class="line">categories: 分类名</div><div class="line">date: 时间</div><div class="line">---</div></pre></td></tr></table></figure>
+        <h2 id="express-mongodb-mongoose-blog后台api"><a href="#express-mongodb-mongoose-blog后台api" class="headerlink" title="express + mongodb + mongoose blog后台api"></a>express + mongodb + mongoose blog后台api</h2><ul>
+<li><p>环境</p>
+<blockquote>
+<p>express + mongoose</p>
+</blockquote>
+<p><a href="https://github.com/venpear/blog-express" target="_blank" rel="external">项目地址</a>： <a href="https://github.com/venpear/blog-express" target="_blank" rel="external">https://github.com/venpear/blog-express</a></p>
+</li>
+<li><p>启动</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm start</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h1 id="添加分类列表页面"><a href="#添加分类列表页面" class="headerlink" title="添加分类列表页面"></a>添加分类列表页面</h1><ul>
-<li>source 文件加下创建文件夹（categories）</li>
-<li>添加文件index.md <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: categories</div><div class="line">date: 时间</div><div class="line">type: &quot;categories&quot;</div><div class="line">---</div></pre></td></tr></table></figure>
-</li>
+<h2 id="项目搭建"><a href="#项目搭建" class="headerlink" title="项目搭建"></a>项目搭建</h2><ul>
+<li>express 项目生成器 项目初始化构建</li>
 </ul>
-<h1 id="添加标签列表页面"><a href="#添加标签列表页面" class="headerlink" title="添加标签列表页面"></a>添加标签列表页面</h1><ul>
-<li>source 文件加下创建文件夹（tags）</li>
-<li>添加文件index.md <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: tags</div><div class="line">date: 时间</div><div class="line">type: &quot;tags&quot;</div><div class="line">---</div></pre></td></tr></table></figure>
-</li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ npm install -g express-generator</div><div class="line">$ express myapp</div><div class="line">$ cd myapp</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
+<h2 id="mongoose"><a href="#mongoose" class="headerlink" title="mongoose"></a><a href="https://www.npmjs.com/package/mongoose" target="_blank" rel="external">mongoose</a></h2><p>首先安装nodejs和mongodb</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install mongoose</div></pre></td></tr></table></figure>
+<h3 id="连接mongodb"><a href="#连接mongodb" class="headerlink" title="连接mongodb"></a>连接mongodb</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var mongoose = require(&apos;mongoose&apos;);</div><div class="line">mongoose.connect(&apos;mongodb://localhost/my_database&apos;);</div></pre></td></tr></table></figure>
+<h3 id="构建可操作数据库的Modal类型"><a href="#构建可操作数据库的Modal类型" class="headerlink" title="构建可操作数据库的Modal类型"></a>构建可操作数据库的Modal类型</h3><ul>
+<li>Schema 初始化（数据modal的模型）</li>
 </ul>
-<h2 id="hexo-命令"><a href="#hexo-命令" class="headerlink" title="hexo 命令"></a>hexo 命令</h2><h1 id="init"><a href="#init" class="headerlink" title="init"></a>init</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init [folder] 初始化 hexo</div></pre></td></tr></table></figure>
-<h1 id="new"><a href="#new" class="headerlink" title="new"></a>new</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo new [layout] &lt;title&gt; </div><div class="line">新建一个名为title，默认使用_config.yml中default_layout参数的主题的文章</div></pre></td></tr></table></figure>
-<h1 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div><div class="line">生成静态文件。 生成的项目的文件放到public文件夹下</div></pre></td></tr></table></figure>
-<h1 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo publish [layout] &lt;filename&gt;</div><div class="line">发布草稿文章。 source/_drafts/下的文件发布到source/_posts中</div></pre></td></tr></table></figure>
-<h1 id="server"><a href="#server" class="headerlink" title="server"></a>server</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo server </div><div class="line">启动hexo服务。默认访问localhost:4000/</div></pre></td></tr></table></figure>
-<h1 id="deplay"><a href="#deplay" class="headerlink" title="deplay"></a>deplay</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo deplay --&gt; hexo d</div><div class="line">部署网站</div></pre></td></tr></table></figure>
-<h1 id="render"><a href="#render" class="headerlink" title="render"></a>render</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo render &lt;file1&gt; [file2] ...</div><div class="line">渲染文件。</div></pre></td></tr></table></figure>
-<h1 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line">清除缓存文件 (db.json) 和已生成的静态文件 (public)。</div></pre></td></tr></table></figure>
-<h1 id="list"><a href="#list" class="headerlink" title="list"></a>list</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo list &lt;type&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var Schema = mongoose.Schema;</div><div class="line">ObjectId = Schema.ObjectId;</div><div class="line">var UserScheme = new Schema(&#123;</div><div class="line">    userid: ObjectId,</div><div class="line">    username: String,</div><div class="line">    password: String,</div><div class="line">    date: Date</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<ul>
+<li>Modal 创建</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var user = mongoose.modal(&apos;User&apos;, UserSchema);</div></pre></td></tr></table></figure>
+<p>以UserSchema为模型创建了一个叫‘User’的Modal(对应mongodb中的集合名–表)，并赋值给user变量</p>
+<h3 id="操作Modal数据"><a href="#操作Modal数据" class="headerlink" title="操作Modal数据"></a>操作Modal数据</h3><ul>
+<li>保存数据</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">user.save(function(err) &#123;</div><div class="line">  // do someing</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<ul>
+<li>查询数据</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">user.find(function() &#123;</div><div class="line">  // docs.forEach</div><div class="line">&#125;)</div><div class="line">or can use fintOne, findById, update</div></pre></td></tr></table></figure>
+<h2 id="API文档"><a href="#API文档" class="headerlink" title="API文档"></a>API文档</h2><ul>
+<li>用户（user）</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>方式</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/users</td>
+<td>POST</td>
+<td>添加用户</td>
+</tr>
+<tr>
+<td>/users</td>
+<td>GET</td>
+<td>获取用户list</td>
+</tr>
+<tr>
+<td>/users/：id</td>
+<td>GET</td>
+<td>获取单个用户info</td>
+</tr>
+<tr>
+<td>/users/：id</td>
+<td>PUT</td>
+<td>更新用户信息</td>
+</tr>
+<tr>
+<td>/users/：id</td>
+<td>DELETE</td>
+<td>删除用户</td>
+</tr>
+<tr>
+<td>/sigin</td>
+<td>POST</td>
+<td>用户登录</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -423,7 +503,9 @@ source 文件加下创建文件夹（categories）
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/node/" rel="tag"># node</a>
+          
+            <a href="/tags/express/" rel="tag"># express</a>
           
         </div>
       
@@ -436,15 +518,15 @@ source 文件加下创建文件夹（categories）
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/07/24/markdown语法/" rel="next" title="markdown语法">
+                <i class="fa fa-chevron-left"></i> markdown语法
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/07/24/markdown语法/" rel="prev" title="markdown语法">
-                markdown语法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -573,7 +655,7 @@ source 文件加下创建文件夹（categories）
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-文件"><span class="nav-number">1.</span> <span class="nav-text">hexo 文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#怎样使用分类"><span class="nav-number"></span> <span class="nav-text">怎样使用分类</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加分类列表页面"><span class="nav-number"></span> <span class="nav-text">添加分类列表页面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加标签列表页面"><span class="nav-number"></span> <span class="nav-text">添加标签列表页面</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-命令"><span class="nav-number">1.</span> <span class="nav-text">hexo 命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#init"><span class="nav-number"></span> <span class="nav-text">init</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#new"><span class="nav-number"></span> <span class="nav-text">new</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#generate"><span class="nav-number"></span> <span class="nav-text">generate</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#publish"><span class="nav-number"></span> <span class="nav-text">publish</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#server"><span class="nav-number"></span> <span class="nav-text">server</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#deplay"><span class="nav-number"></span> <span class="nav-text">deplay</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#render"><span class="nav-number"></span> <span class="nav-text">render</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#clean"><span class="nav-number"></span> <span class="nav-text">clean</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#list"><span class="nav-number"></span> <span class="nav-text">list</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#express-mongodb-mongoose-blog后台api"><span class="nav-number">1.</span> <span class="nav-text">express + mongodb + mongoose blog后台api</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目搭建"><span class="nav-number">2.</span> <span class="nav-text">项目搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mongoose"><span class="nav-number">3.</span> <span class="nav-text">mongoose</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#连接mongodb"><span class="nav-number">3.1.</span> <span class="nav-text">连接mongodb</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#构建可操作数据库的Modal类型"><span class="nav-number">3.2.</span> <span class="nav-text">构建可操作数据库的Modal类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#操作Modal数据"><span class="nav-number">3.3.</span> <span class="nav-text">操作Modal数据</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#API文档"><span class="nav-number">4.</span> <span class="nav-text">API文档</span></a></li></ol></div>
             
 
           </div>
