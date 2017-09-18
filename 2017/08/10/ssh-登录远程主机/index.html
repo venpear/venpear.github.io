@@ -87,16 +87,64 @@
 
 
 
-<meta name="description" content="venpar&apos;s blog">
+<meta name="description" content="成ssh-key
+打开终端 
+1$ssh-keygen
+
+根据提示 敲击但三次回车，会在~.ssh文件夹下生成 id_rsa.pub  id_rsa 文件
+
+id_rsa.pub 公钥id_rsa 私钥
+在远程主机上添加，本地的公钥
+
+
+
+打开 cat id_rsa.pub 拷贝文件内容
+连接远程主机 打开~/.ssh 
+创建文件 authorized_keys
+粘贴刚在复制公钥
+
+本机登录远程主">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ssh 登录远程主机">
 <meta property="og:url" content="http://yoursite.com/2017/08/10/ssh-登录远程主机/index.html">
 <meta property="og:site_name" content="venpear">
-<meta property="og:description" content="venpar&apos;s blog">
-<meta property="og:updated_time" content="2017-08-10T05:57:54.000Z">
+<meta property="og:description" content="成ssh-key
+打开终端 
+1$ssh-keygen
+
+根据提示 敲击但三次回车，会在~.ssh文件夹下生成 id_rsa.pub  id_rsa 文件
+
+id_rsa.pub 公钥id_rsa 私钥
+在远程主机上添加，本地的公钥
+
+
+
+打开 cat id_rsa.pub 拷贝文件内容
+连接远程主机 打开~/.ssh 
+创建文件 authorized_keys
+粘贴刚在复制公钥
+
+本机登录远程主">
+<meta property="og:updated_time" content="2017-09-18T15:15:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ssh 登录远程主机">
-<meta name="twitter:description" content="venpar&apos;s blog">
+<meta name="twitter:description" content="成ssh-key
+打开终端 
+1$ssh-keygen
+
+根据提示 敲击但三次回车，会在~.ssh文件夹下生成 id_rsa.pub  id_rsa 文件
+
+id_rsa.pub 公钥id_rsa 私钥
+在远程主机上添加，本地的公钥
+
+
+
+打开 cat id_rsa.pub 拷贝文件内容
+连接远程主机 打开~/.ssh 
+创建文件 authorized_keys
+粘贴刚在复制公钥
+
+本机登录远程主">
 
 
 
@@ -353,7 +401,23 @@
       
 
       
-        
+        <h2 id="成ssh-key"><a href="#成ssh-key" class="headerlink" title="成ssh-key"></a>成ssh-key</h2><ul>
+<li><p>打开终端 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ssh-keygen</div></pre></td></tr></table></figure>
+</li>
+<li><p>根据提示 敲击但三次回车，会在~.ssh文件夹下生成 id_rsa.pub  id_rsa 文件</p>
+<blockquote>
+<p>id_rsa.pub 公钥<br>id_rsa 私钥</p>
+<h2 id="在远程主机上添加，本地的公钥"><a href="#在远程主机上添加，本地的公钥" class="headerlink" title="在远程主机上添加，本地的公钥"></a>在远程主机上添加，本地的公钥</h2></blockquote>
+</li>
+</ul>
+<ol>
+<li>打开 cat id_rsa.pub 拷贝文件内容</li>
+<li>连接远程主机 打开~/.ssh </li>
+<li>创建文件 authorized_keys</li>
+<li>粘贴刚在复制公钥</li>
+</ol>
+<h2 id="本机登录远程主机，可以免去输入密码了"><a href="#本机登录远程主机，可以免去输入密码了" class="headerlink" title="本机登录远程主机，可以免去输入密码了"></a>本机登录远程主机，可以免去输入密码了</h2>
       
     </div>
 
@@ -450,8 +514,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -513,6 +586,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#成ssh-key"><span class="nav-number">1.</span> <span class="nav-text">成ssh-key</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在远程主机上添加，本地的公钥"><span class="nav-number">2.</span> <span class="nav-text">在远程主机上添加，本地的公钥</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本机登录远程主机，可以免去输入密码了"><span class="nav-number">3.</span> <span class="nav-text">本机登录远程主机，可以免去输入密码了</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
