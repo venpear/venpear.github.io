@@ -87,15 +87,22 @@
 
 
 
-<meta name="description" content="venpar&apos;s blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="venpear">
-<meta property="og:url" content="http://yoursite.com/archives/2017/06/index.html">
+<meta name="description" content="项目中遇到一个鼠标悬停的事件，具体场景是，鼠标移动会有相应的操作，鼠标悬停是也要有相应的操作。 移动事件‘mousemove’可以解决，遗憾的是悬停事件并没有提供，下额面就说明一下怎么用已有事件实现悬停事件。
+
+鼠标移动时我们是可以知道的，悬停最主要的问题是，停多久才叫悬停，那么问题转化为时间的问题了。说到这里，我们用setTimeout来监听mousemove移动的时间，就可以实现我们的需求了">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript-鼠标悬停事件">
+<meta property="og:url" content="http://yoursite.com/2017/09/21/javascript-鼠标悬停事件/index.html">
 <meta property="og:site_name" content="venpear">
-<meta property="og:description" content="venpar&apos;s blog">
+<meta property="og:description" content="项目中遇到一个鼠标悬停的事件，具体场景是，鼠标移动会有相应的操作，鼠标悬停是也要有相应的操作。 移动事件‘mousemove’可以解决，遗憾的是悬停事件并没有提供，下额面就说明一下怎么用已有事件实现悬停事件。
+
+鼠标移动时我们是可以知道的，悬停最主要的问题是，停多久才叫悬停，那么问题转化为时间的问题了。说到这里，我们用setTimeout来监听mousemove移动的时间，就可以实现我们的需求了">
+<meta property="og:updated_time" content="2017-09-21T03:53:03.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="venpear">
-<meta name="twitter:description" content="venpar&apos;s blog">
+<meta name="twitter:title" content="javascript-鼠标悬停事件">
+<meta name="twitter:description" content="项目中遇到一个鼠标悬停的事件，具体场景是，鼠标移动会有相应的操作，鼠标悬停是也要有相应的操作。 移动事件‘mousemove’可以解决，遗憾的是悬停事件并没有提供，下额面就说明一下怎么用已有事件实现悬停事件。
+
+鼠标移动时我们是可以知道的，悬停最主要的问题是，停多久才叫悬停，那么问题转化为时间的问题了。说到这里，我们用setTimeout来监听mousemove移动的时间，就可以实现我们的需求了">
 
 
 
@@ -123,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2017/06/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/09/21/javascript-鼠标悬停事件/"/>
 
 
 
 
 
-  <title> 归档 | venpear </title>
+  <title> javascript-鼠标悬停事件 | venpear </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -154,7 +161,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -248,66 +255,154 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 6 篇日志。 继续努力。
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/21/javascript-鼠标悬停事件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="venpear">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="venpear">
     </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                javascript-鼠标悬停事件
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-21T11:03:48+08:00">
+                2017-09-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
+
+      
+        <p>项目中遇到一个鼠标悬停的事件，具体场景是，鼠标移动会有相应的操作，鼠标悬停是也要有相应的操作。 移动事件‘mousemove’可以解决，遗憾的是悬停事件并没有提供，下额面就说明一下怎么用已有事件实现悬停事件。</p>
+<blockquote>
+<p>鼠标移动时我们是可以知道的，悬停最主要的问题是，停多久才叫悬停，那么问题转化为时间的问题了。说到这里，我们用setTimeout来监听mousemove移动的时间，就可以实现我们的需求了</p>
+</blockquote>
+<p>开始撸代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">const TIMEOUT_MOVE = 50 //悬停时间</div><div class="line">this.lastMoveTime = null </div><div class="line">window.addEventListener(&apos;mousemove&apos;, () =&gt; &#123;</div><div class="line">  const now = new Date()</div><div class="line">  if(this.lastMoveTime == null || (now - this.lastMoveTime &lt; TIME_MOVE)) &#123;</div><div class="line">    this.lastMoveTime = now //更新最后一次移动的时间</div><div class="line">    clearTimeout(this.timer)//清楚鼠标悬停计时</div><div class="line">    //监听鼠标停留时间</div><div class="line">    tihs.timer = setTimeout(() =&gt; &#123;</div><div class="line">      //TIME_MOVE后 触发了 说明鼠标已经停留了TIME_MOVE,也就数触发 鼠标悬停的时间</div><div class="line">      this.lasterTime = null //清空鼠标最后停留时间</div><div class="line">      /*</div><div class="line">      ** 操作鼠标悬停后事件</div><div class="line">      **/</div><div class="line">    &#125;, TIME_MOVE)</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
       
 
       
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/10/ssh-登录远程主机/" rel="next" title="ssh 登录远程主机">
+                <i class="fa fa-chevron-left"></i> ssh 登录远程主机
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
         </div>
       
-      
 
       
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/06/29/heox-使用笔记/" itemprop="url">
-              
-                <span itemprop="name">hexo 使用笔记</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-06-29T10:03:13+08:00"
-              content="2017-06-29" >
-          06-29
-        </time>
-      </div>
-
-    </header>
+      
+    </footer>
   </article>
 
 
 
-    
-
-  </section>
-
-  
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -315,6 +410,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -511,11 +610,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
 
 
   
